@@ -8,6 +8,7 @@ var express = require('express'),
 	passport = require('passport'),
 	methodOverride = require("method-override"),
 	LocalStrategy = require('passport-local'),
+	dotEnv = require('dotenv'),
 	User = require('./models/user'),
 	seedDB = require('./seeds'),
 	flash = require("connect-flash"),
@@ -20,6 +21,8 @@ var express = require('express'),
 // seedDB();
 
 // APP CONFIGURATION
+
+dotEnv.config();
 
 mongoose.connect('mongodb://localhost/yelpcamp', { useNewUrlParser: true , useFindAndModify: false});
 
