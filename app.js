@@ -24,7 +24,7 @@ var express = require('express'),
 
 dotEnv.config();
 
-mongoose.connect('mongodb://localhost/yelpcamp', { useNewUrlParser: true , useFindAndModify: false});
+mongoose.connect(process.env.MONGODB_URL , { useNewUrlParser: true , useFindAndModify: false});
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
