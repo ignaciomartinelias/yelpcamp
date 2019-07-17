@@ -5,3 +5,17 @@
 .img-thumbnail {
     padding: 0;
 }
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.boton-formulario {
+    width: 45%;
+}
