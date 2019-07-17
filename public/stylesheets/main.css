@@ -19,3 +19,29 @@
 .boton-formulario {
     width: 45%;
 }
+
+.boton-back {
+    margin-left: 20%;
+    width: 10%;
+    text-align: center;
+    padding: 7.5px;
+    color: black;
+    font-weight: 600;
+}
+
+.boton-back:hover {
+    color: rgba(0,0,0,.8);
+    text-decoration: none;
+}
+
+.boton-back.showpage {
+    display: block;
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+.camp-title {
+    margin: 10px auto;
+}
