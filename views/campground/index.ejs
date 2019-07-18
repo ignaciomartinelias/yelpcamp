@@ -3,11 +3,19 @@
 <div class="container">
   <header class="jumbotron">
     <div class="container">
-      <h1>Welcome to Yelpcamp!</h1>
+      <h1><i class="fas fa-campground"></i> Welcome to Yelpcamp!</h1>
       <p>View our hand-picked campgrounds from all over the world</p>
       <p>
+        <form action="/campgrounds" method="GET" class="form-inline">
+          <div class="input-group-sm">
+            <input type="text" name="search" placeholder="Campground search..." class="form-control search-bar">
+            <button class="btn btn-sm btn-secondary"><i class="fas fa-search"></i> Search</button>
+          </div>
+        </form>
+      </p>
+            <p>
         <a class="btn btn-primary btn-sm" href="/campgrounds/new">
-          Add New Campground
+          <i class="fas fa-plus"></i> Add New Campground
         </a>
       </p>
     </div>
@@ -22,7 +30,7 @@
             <h5 class="camp-title">  <%=camp.name%></h5>
         </div>
         <p>
-          <a href="/campgrounds/<%=camp.id%>" class="btn btn-dark btn-sm">More Info</a>
+          <a href="/campgrounds/<%=camp.id%>" class="btn btn-dark btn-sm boton-info">More Info</a>
         </p>
       </div>
     </div>

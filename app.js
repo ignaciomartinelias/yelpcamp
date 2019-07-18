@@ -1,5 +1,8 @@
 // Requiering Dependencies, Models, Seeds & Routes
 
+var dotEnv = require('dotenv');
+dotEnv.config();
+
 var express = require('express'),
 	app = express(),
 	bodyParser = require('body-parser'),
@@ -7,8 +10,8 @@ var express = require('express'),
 	expressSession = require("express-session"),
 	passport = require('passport'),
 	methodOverride = require("method-override"),
+	moment = require("moment"),
 	LocalStrategy = require('passport-local'),
-	dotEnv = require('dotenv'),
 	User = require('./models/user'),
 	seedDB = require('./seeds'),
 	flash = require("connect-flash"),
@@ -21,8 +24,6 @@ var express = require('express'),
 // seedDB();
 
 // APP CONFIGURATION
-
-dotEnv.config();
 
 mongoose.connect(process.env.MONGODB_URL , { useNewUrlParser: true , useFindAndModify: false});
 
@@ -51,6 +52,7 @@ app.use(function(req,res,next){
 	res.locals.currentUser = req.user;
 	res.locals.error = req.flash("error");
 	res.locals.success = req.flash("success");
+	res.locals.moment = moment;
 	next();
 })
 
