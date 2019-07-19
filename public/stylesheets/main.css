@@ -49,14 +49,51 @@
 
 .camp-title {
 	margin: 10px;
+	font-size: .95em;
 }
 
 .search-bar {
 	min-width: 300px;
 }
 
+.boton-info {
+	font-size: .75em;
+	font-weight: 500;
+}
+
+.camp-card {
+	min-height: 300px;
+}
+
+.camp-location {
+	font-size: .8em;
+}
+
 #map {
 	margin-top: 25px;
 	height: 400px;
 	width: 100%;
+}
+
+footer {
+	min-height: 100px;
+	margin-top: 25px;
+	background-color: #343a40;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer p {
+	color: white;
+	font-size: 18px;
+}
+
+.footer-link {
+	color: white;
+}
+
+.footer-link:hover {
+	text-decoration: none;
+	color:white;
 }
