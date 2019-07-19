@@ -15,6 +15,8 @@ Dependencies
 
 "connect-flash": "^0.1.1"
 
+"dotenv": "^8.0.0"
+
 "ejs": "^2.6.2"
 
 "express": "^4.17.1"
@@ -23,10 +25,15 @@ Dependencies
 
 "method-override": "^3.0.0"
 
+"moment": "^2.24.0"
+
 "mongoose": "^5.6.2"
+
+"node-geocoder": "^3.23.0"
 
 "passport": "^0.4.0"
 
 "passport-local": "^1.0.0"
 
 "passport-local-mongoose": "^5.0.1"
+
