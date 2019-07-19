@@ -76,7 +76,10 @@
 }
 
 footer {
-	min-height: 100px;
+	position: absolute;
+	bottom:0;
+	width: 100%;
+	min-height: 50px;
 	margin-top: 25px;
 	background-color: #343a40;
 	display: flex;
@@ -87,6 +90,7 @@ footer {
 footer p {
 	color: white;
 	font-size: 18px;
+	margin: 0;
 }
 
 .footer-link {
